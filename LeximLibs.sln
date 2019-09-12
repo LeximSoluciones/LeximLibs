@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lexim.Utils", "Lexim.Utils\Lexim.Utils.csproj", "{616373D3-F48C-4746-AAFB-3A685949024D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lexim.Logging", "Lexim.Logging\Lexim.Logging.csproj", "{880B4084-EB78-4A26-A12C-E0EB6A773794}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lexim.Data", "Lexim.Data\Lexim.Data.csproj", "{6BAA9CBA-C830-4CC0-B9FE-95354B0AF4CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lexim.Data.Abstractions", "Lexim.Data.Abstractions\Lexim.Data.Abstractions.csproj", "{A883DCD6-23D5-46A3-8F9C-CB432730150F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{616373D3-F48C-4746-AAFB-3A685949024D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{616373D3-F48C-4746-AAFB-3A685949024D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{616373D3-F48C-4746-AAFB-3A685949024D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{616373D3-F48C-4746-AAFB-3A685949024D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{880B4084-EB78-4A26-A12C-E0EB6A773794}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{880B4084-EB78-4A26-A12C-E0EB6A773794}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{880B4084-EB78-4A26-A12C-E0EB6A773794}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{880B4084-EB78-4A26-A12C-E0EB6A773794}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BAA9CBA-C830-4CC0-B9FE-95354B0AF4CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BAA9CBA-C830-4CC0-B9FE-95354B0AF4CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BAA9CBA-C830-4CC0-B9FE-95354B0AF4CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BAA9CBA-C830-4CC0-B9FE-95354B0AF4CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A883DCD6-23D5-46A3-8F9C-CB432730150F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A883DCD6-23D5-46A3-8F9C-CB432730150F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A883DCD6-23D5-46A3-8F9C-CB432730150F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A883DCD6-23D5-46A3-8F9C-CB432730150F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {70043DFA-8F98-4FC7-98ED-C06CB94DFB65}
+	EndGlobalSection
+EndGlobal

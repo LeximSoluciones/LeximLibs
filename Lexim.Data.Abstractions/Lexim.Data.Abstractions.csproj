@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+
+    <Description>Lexim DataAccess Core Abstractions</Description>
+    <Authors>Federico Berasategui</Authors>
+    <Company>Lexim</Company>
+    <Product>Lexim</Product>
+    <Copyright>Copyright 2019</Copyright>
+    <PackageIconUrl>https://avatars2.githubusercontent.com/u/42818019?s=200&amp;v=4</PackageIconUrl>
+    <PackageTags>Lexim Data</PackageTags>
+  </PropertyGroup>
+</Project>
