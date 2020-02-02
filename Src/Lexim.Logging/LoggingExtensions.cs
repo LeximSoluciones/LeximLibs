@@ -70,6 +70,7 @@ namespace Lexim.Logging
                         Rfc5424 = new Rfc5424Config
                         {
                             AppName = configuration.ApplicationName,
+                            Hostname = configuration.HostName ?? Environment.MachineName
                         }
                     },
                     MessageSend = new MessageTransmitterConfig

@@ -10,6 +10,7 @@
         public string PaperTrailLogLevel { get; set; }
         public string FileLogLevel { get; set; }
         public string ApplicationName { get; set; }
+        public string HostName { get; set; }
         public string ConsoleLogLevel { get; set; }
     }
 }
