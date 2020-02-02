@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
 
-    <Description>Lexim Logging Library</Description>
+    <Description>Lexim Logging Library for ASP.NET Core </Description>
     <Authors>Federico Berasategui</Authors>
     <Company>Lexim</Company>
     <Product>Lexim</Product>
@@ -12,9 +12,16 @@
     <PackageTags>Lexim Logging</PackageTags>
   </PropertyGroup>
 
+  
   <ItemGroup>
-    <PackageReference Include="NLog" Version="4.5.10" />
-    <PackageReference Include="NLog.Targets.Syslog" Version="5.0.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="2.1.1" />
+    <PackageReference Include="NLog.Extensions.Logging" Version="1.3.0" />
+  </ItemGroup>
+
+  
+  <ItemGroup>
+    <ProjectReference Include="..\Lexim.Logging\Lexim.Logging.csproj" />
   </ItemGroup>
 
 </Project>

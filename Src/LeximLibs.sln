@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lexim.Logging", "Lexim.Logg
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lexim.Data", "Lexim.Data\Lexim.Data.csproj", "{6BAA9CBA-C830-4CC0-B9FE-95354B0AF4CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lexim.Data.Abstractions", "Lexim.Data.Abstractions\Lexim.Data.Abstractions.csproj", "{A883DCD6-23D5-46A3-8F9C-CB432730150F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lexim.Data.Abstractions", "Lexim.Data.Abstractions\Lexim.Data.Abstractions.csproj", "{A883DCD6-23D5-46A3-8F9C-CB432730150F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lexim.Logging.AspNetCore", "Lexim.Logging.AspNetCore\Lexim.Logging.AspNetCore.csproj", "{2CACFEDF-B7FF-47B3-BA4D-B9D20C897F37}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{A883DCD6-23D5-46A3-8F9C-CB432730150F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A883DCD6-23D5-46A3-8F9C-CB432730150F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A883DCD6-23D5-46A3-8F9C-CB432730150F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CACFEDF-B7FF-47B3-BA4D-B9D20C897F37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CACFEDF-B7FF-47B3-BA4D-B9D20C897F37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CACFEDF-B7FF-47B3-BA4D-B9D20C897F37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CACFEDF-B7FF-47B3-BA4D-B9D20C897F37}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
