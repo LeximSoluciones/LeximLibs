@@ -115,9 +115,10 @@ namespace Lexim.Logging
         {
             new LoggingConfiguration()
                    .UseFile(logConfig)
-                   .UsePaperTrail(logConfig)
-                   .UseSlack(logConfig)
                    .UseConsole(logConfig)
+                   .UsePaperTrail(logConfig)
+                   .UseElastic(logConfig)
+                   .UseSlack(logConfig)
                    .Apply();
         }
     }
