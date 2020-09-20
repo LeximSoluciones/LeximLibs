@@ -33,7 +33,6 @@
         public string Username { get; set; }
         public string Password { get; set; }
         public string Uri { get; set; }
-        public string Index { get; set; }
         public string LogLevel { get; set; }
     }
 }

@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 using Lexim.Logging.Slack;
 using NLog;
 using NLog.Config;
 using NLog.Targets;
+using NLog.Targets.ElasticSearch;
 using NLog.Targets.Syslog;
 using NLog.Targets.Syslog.Settings;
 using LogLevel = NLog.LogLevel;
@@ -54,7 +56,10 @@ namespace Lexim.Logging
         {
             if (!string.IsNullOrEmpty(config.Elastic?.Uri))
             {
-                var target = new NLog.Targets.ElasticSearch.ElasticSearchTarget
+                if (config.HostName.Contains("-"))
+                    throw new InvalidOperationException($"Dash character (-) is not allowed in the Logging.HostName property. Please check your application settings file.");
+
+                var target = new ElasticSearchTarget
                 {
                     Name = "Elastic",
                     CloudId = config.Elastic.CloudId,
@@ -62,7 +67,13 @@ namespace Lexim.Logging
                     Password = config.Elastic.Password,
                     RequireAuth = true,
                     Uri = config.Elastic.Uri,
-                    Index = config.Elastic.Index
+                    Index = $"logs-{config.HostName}",
+                    Fields = new List<Field>
+                    {
+                        new Field { Name = "host.name", Layout = config.HostName },
+                        new Field { Name = "application", Layout = config.ApplicationName }
+                    },
+                    Layout = "${message}"
                 };
 
                 configuration.LoggingRules.Add(new LoggingRule("*", LogLevel.FromString(config.Elastic.LogLevel ?? "Trace"), target));
